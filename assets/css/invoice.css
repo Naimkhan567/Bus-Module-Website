@@ -1,0 +1,885 @@
+
+
+
+@font-face {
+    font-family: neo-bold;
+    src: url(../font/Changeling\ Neo\ Bold.otf);
+}
+
+@font-face {
+    font-family: bahn;
+    src: url(../font/bahnschrift.ttf);
+}
+
+@font-face {
+    font-family: gotham;
+    src: url(../font/GothamBook.ttf);
+}
+
+@font-face {
+    font-family: gotham medium;
+    src: url(../font/GothamMedium.ttf);
+}
+
+@font-face {
+    font-family: gotham bold;
+    src: url(../font/Gotham-Bold.otf);
+}
+
+@font-face {
+    font-family: myriyad;
+    src: url(../font/MYRIADPRO-REGULAR.OTF);
+}
+
+
+body {
+    overflow-x: hidden;
+    height: auto;
+}
+
+
+.mobile-close {
+    width: 100%;
+    text-align: right;
+    display: none;
+}
+
+.mobile-close .close-btn {
+    text-decoration: none;
+    display: block;
+}
+
+
+.invoice {
+   width: 90%;
+   margin: 0 auto;
+}
+
+.invoice .download {
+    text-align: center;
+    margin: 1rem auto;
+}
+
+.invoice .download h1 {
+    font-family: bahn;
+    font-size: 1.3rem;
+    color: #a2a2a2;
+}
+
+.invoice .foot .paid{
+    font-family: bahn;
+    font-size: 2rem;
+    margin-left: 3rem;
+    color: #ffffff;
+    display: none;
+}
+
+.invoice .download .download-btn a {
+    text-decoration: none;
+    display: inline-block;
+    padding: .5rem 2rem;
+    font-family: myriyad;
+    background-color: #efefef;
+    border-radius: .5rem;
+    color: #b8b8b8;
+}
+
+.invoice .body {
+    max-width: 85%;
+    width: 100%;
+    background-color: #FBC108;
+    margin: 0 auto;
+    padding: 0 2rem;
+    border-radius: 2rem;
+}
+
+.invoice .row-invoice {
+    display: flex;
+}
+
+.invoice .row-invoice .left {
+    width: 65%;
+    border-right: 1px solid #e7e3e3;
+}
+
+.invoice .row-invoice .right {
+    width: 35%;  
+    margin-left: 1rem;
+}
+
+.invoice .body .main-body {
+    background-color: #FFFFFF;
+    padding: 1.5rem 2rem;
+    padding-bottom: 0;
+    box-shadow: 0 2px 5px #e7e3e3;
+}
+
+.invoice .main-body .head {
+    width: 90%;
+}
+
+.invoice .main-body .head .log .form-check {
+    padding-right: 2.6rem;
+}
+
+.invoice .main-body .head .log .form-check-input[type=checkbox] {
+    border-radius: 2rem;
+    border: 1px solid #ff3030;
+}
+
+.invoice .main-body .head .log .form-check-label {
+    font-family: bahn;
+    font-size: 1.1rem;
+    color: #ff3030;
+}
+
+.invoice .main-body .head .no .invoice-no {
+    font-family: bahn;
+    font-size: 1.1rem;
+    color: #BABABA;
+    margin-bottom: .5rem;
+}
+
+.invoice .main-body .head .no .bar {
+    width: 100%;
+    background-color: #e7e3e3;
+}
+
+.invoice .main-body .head .second .plus h3 {
+    font-family: gotham medium;
+    font-size: 1.3rem;
+    color: #000;
+}
+
+.invoice .main-body .head .second {
+    padding: 1rem 0;
+}
+
+.invoice .main-body .head .second .bar {
+    background-color: #e7e3e3;
+    margin: .5rem 0;
+    margin-left: 0;
+}
+
+.invoice .main-body .head .second .plus p {
+    font-family: myriyad;
+    font-size: 1rem;
+    color: #f15a29;
+    line-height: .1;
+}
+
+.invoice .main-body .head .second .city {
+    margin-right: 3.1rem;
+}
+
+.invoice .main-body .head .second .city p {
+    font-family: gotham medium;
+    font-size: 1.1rem;
+    color: #000;
+}
+
+.invoice .main-body .head .second .terminal {
+    padding-top: 0.5rem;
+}
+
+.invoice .main-body .head .second .terminal .place {
+    text-align: center;
+    padding-top: 1.2rem;
+}
+
+.invoice .main-body .head .second .terminal .place svg {
+    display: inline-block;
+}
+
+.invoice .main-body .head .second .terminal .place h2 {
+    font-family: gotham bold;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    color: #000;
+}
+
+.invoice .main-body .head .second .terminal .seat p {
+    font-family: gotham medium;
+    font-size: 1rem;
+    color: #000;
+    display: none;
+}
+
+.invoice .main-body .head .second .terminal .time {
+    margin-left: 5rem;
+}
+
+.invoice .main-body .head .second .terminal .time p {
+    font-family: myriyad;
+    font-size: 1.1rem;
+    color: #000;
+    margin-bottom: 0;
+}
+
+.invoice .main-body .head .second .terminal .time .time-p {
+    font-family: gotham medium;
+    font-size: 1.1rem;
+    color: #000;
+}
+
+.invoice .main-body .body2 {
+    background-color: #FBC108;
+    padding: 1.5rem 1rem;
+    padding-left: 1.5rem;
+    border-radius: .5rem;
+    width: 92%;
+    margin: 0;
+}
+
+.invoice .main-body .body2 h3 {
+    font-family: bahn;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    color: #ffffff;
+}
+
+.invoice .main-body .body2 h5 {
+    font-family: bahn;
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+.invoice .main-body .body-payment {
+    width: 85%;
+    margin: 1.5rem 0;
+}
+
+.invoice .main-body .body-payment h1 {
+    font-family: bahn;
+    font-size: 1rem;
+    color: #000;
+}
+
+.invoice .main-body .body-payment .other div {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.invoice .main-body .body-payment .other svg {
+    display: block;
+    margin: 0 auto;
+}
+
+.invoice .main-body .body-payment .other div p {
+    font-family: myriyad;
+    font-size: .7rem;
+    color: #BABABA;
+    padding-top: .5rem;
+}
+
+.invoice .main-body .foot {
+    padding-top: 0rem;
+}
+
+.invoice .main-body .foot h4 {
+    font-family: bahn;
+    font-size: 1rem;
+    color: #000;
+}
+
+.invoice .main-body .foot h1 {
+    font-family: bahn;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000;
+}
+
+.invoice .main-body .head-qr {
+    background-color: #f1f2f2;
+    padding: 2rem 1rem;
+    border-radius: 1rem;
+}
+
+.invoice .main-body .head-qr .title {
+    font-family: bahn;
+    font-size: .7rem;
+    font-weight: bold;
+    color: #000;
+    padding: 0;
+}
+
+.invoice .main-body .head-qr .id .book-id .book {
+    padding: .5rem 0;
+}
+
+.invoice .main-body .head-qr .book-id h4 {
+    font-family: myriyad;
+    font-size: .7rem;
+    color: #a7a9ac;
+}
+
+.invoice .main-body .head-qr .book-id .book h5 {
+    font-family: myriyad;
+    font-size: .7rem;
+    color: #000;
+    line-height: .2;
+}
+
+.invoice .main-body .head-qr .book-id .book-time h4 {
+    font-family: myriyad;
+    font-size: .9rem;
+    color: #a7a9ac;
+}
+
+.invoice .main-body .head-qr .book-id .book-time h5 {
+    font-family: myriyad;
+    font-size: .9rem;
+    color: #000;
+    list-style: 3px;
+}
+
+.invoice .main-body .head-qr .pnr {
+    padding-top: .6rem;
+    padding-left: 1.5rem;
+}
+
+.invoice .main-body .head-qr .pnr h4 {
+    font-family: myriyad;
+    font-size: .7rem;
+    color: #a7a9ac;
+}
+
+.invoice .main-body .head-qr .pnr h5 {
+    font-family: myriyad;
+    font-size: .8rem;
+    color: #000;
+}
+
+.invoice .main-body .pass-details {
+    width: 100%;
+    margin: 1rem 0;
+    margin-top: 1.5rem;
+}
+
+.invoice .main-body .pass-details h2 {
+    font-family: gotham medium;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #000;
+    padding-bottom: 1rem;
+}
+
+.invoice .main-body .pass-details h1 {
+    font-family: myriyad;
+    font-size: 1.1rem;
+    color: #b8b8b8;
+    font-weight: 400;
+}
+
+.invoice .main-body .pass-details .text-name {
+    border-top: 1px solid #e7e3e3;
+    border-bottom: 1px solid #e7e3e3;
+    padding: 0 1rem;
+}
+
+
+.invoice .main-body .pass-details .text-name2 div {
+    margin: 1.2rem 0;
+}
+
+.invoice .main-body .pass-details .text-name .right {
+    padding-left: .6rem;
+}
+
+.invoice .main-body .pass-details div h3 {
+    font-family: myriyad;
+    font-size: 1.1rem;
+    color: #000;
+    font-weight: 400;
+}
+
+.invoice .main-body .pass-details div p {
+    font-family: myriyad;
+    font-size: .9rem;
+    color: #f15a29;
+    line-height: .2;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+
+.invoice .main-body .pass-details .text .text-nic h3 {
+    margin: 1rem 0;
+    margin-left: .5rem;
+    margin-bottom: 2rem;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 1286px) {
+    .invoice .row-invoice .left {
+        width: 60%;
+        border-right: 1px solid #e7e3e3;
+    }
+    
+    .invoice .row-invoice .right {
+        width: 40%;  
+        margin-left: 1rem;
+    }
+
+    .invoice .main-body .head .second .city {
+        margin-right: 2.6rem;
+    }
+}
+
+@media screen and (max-width: 1215px){
+    .invoice .main-body .head .second .city {
+        margin-right: 1.5rem;
+    }
+
+    .invoice .main-body .head .log .form-check {
+        padding-right: 1rem;
+    }
+    
+}
+
+
+@media screen and (max-width: 1149px) {
+    .invoice .main-body .pass-details .text .text-nic h3 {
+        margin-bottom: 1.3rem;
+    }
+
+    .invoice .main-body .pass-details .text-name2 div {
+        margin: 1.5rem 0;
+    }
+}
+
+
+@media screen and (max-width: 1120px){
+    .invoice .main-body .head .second .city {
+        margin-right: .5rem;
+    }
+
+    .invoice .main-body .head .log .form-check {
+        padding-right: 0rem;
+    }
+    
+}
+
+@media screen and (max-width: 1015px) {
+    .invoice .body .main-body {
+        background-color: #FFFFFF;
+        padding: 1.5rem 1rem;
+    }
+}
+
+@media screen and (max-width: 955px) {
+    .invoice .main-body .head .second .city {
+        margin-right: 0rem;
+    }
+
+    .invoice .main-body .head-qr {
+        background-color: #f1f2f2;
+        padding: 2rem .5rem;
+        border-radius: 1rem;
+    }
+
+    .invoice {
+        width: 95%;
+        margin: 0 auto;
+     }
+}
+
+
+
+@media screen and (max-width: 877px) {
+
+    .mobile-close {
+        display: block;
+    }
+
+    .invoice .row-invoice {
+        display: block;
+    }
+
+    .invoice .row-invoice .left {
+        width: 90%;
+        margin: 0 auto;
+        border: none; 
+    }
+    
+    .invoice .row-invoice .right {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .invoice .main-body .head .log .form-check {
+        display: none;
+    }
+
+    .invoice .main-body .head .log svg {
+        display: none;
+    }
+
+    .invoice .main-body .head .no .invoice-no {
+        display: none;
+    }
+
+    .invoice .main-body .head .head-part {
+        background-color: #00a651;
+        border-top-right-radius: 2rem;
+        border-top-left-radius: 2rem;
+    }
+
+    .invoice .main-body .head {
+        width: 100%;
+    }
+
+    .invoice .main-body .head .second-plus {
+        position: relative;
+    }
+
+    .invoice .main-body .head .second .city{
+        position: absolute;
+        top: -2.7rem;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .invoice .main-body .head .second .city p{
+        color: #FFFFFF;
+    }
+
+    .invoice .main-body .head .no .bar {
+        width: 100%;
+        background-color: #e7e3e3;
+        margin-top: 4rem;
+    }
+
+    .invoice .row-invoice .left {
+        width: 100%;
+        margin: 0 auto;
+        border: none;
+    }
+
+    .invoice .body .main-body {
+        background-color: #FFFFFF;
+        padding: 0;
+    }
+
+    .invoice .main-body .head .second {
+        padding: 1rem;
+    }
+
+    .invoice .main-body .head .second .terminal {
+        position: relative;
+    }
+
+    .invoice .main-body .head .second .terminal .place {
+        position: absolute;
+        top: -4rem;
+        right: 0;
+    }
+
+    .invoice .main-body .head .second .terminal .seat p {
+        position: absolute;
+        top: 2rem;
+        left: 0rem;
+        display: block;
+    }
+
+    .invoice .main-body .body2 {
+        display: none;
+    }
+
+
+    .invoice .main-body .body-payment {
+        width: 85%;
+        margin: 1.5rem 0;
+        padding-left: 1rem;
+        padding-top: 40rem;
+    }
+
+    
+
+    .invoice .main-body  {
+        position: relative;
+    }
+
+    .invoice .row-invoice .right {
+        width: 100%;
+        position: absolute;
+        top: 15rem;
+    }
+
+    .invoice .main-body .head-qr {
+        background-color: #f1f2f2;
+        padding: 2rem 1rem;
+        border-radius: 1rem;
+    }
+
+    .invoice .main-body .foot {
+        margin-top: 2rem;
+        background-color: #00a651;
+        padding-left: 1rem;
+        padding-right: .5rem;
+        display: flex;
+        justify-content: center;
+        border-bottom-left-radius: 2rem;
+        border-bottom-right-radius: 2rem;
+    }
+
+    .invoice .main-body .foot .paid {
+        display: block;
+        margin: .7rem 0;
+        margin-top: 1.3rem;
+        padding-left: 3rem;
+        font-weight: bold;
+        border-left: 2px solid #a7a9ac;
+    }
+
+    .invoice .main-body .foot .foot-text {
+        padding-right: 3rem;
+    }
+
+    .invoice .main-body .foot .foot-text h4,
+    .invoice .main-body .foot .foot-text h1 {
+        color: #ffffff;
+    }
+
+    .invoice .main-body .pass-details {
+        width: 80%;
+        margin: 1rem auto;
+        margin-top: 1.5rem;
+        border: 1px solid #000;
+    }
+
+    .invoice .main-body .pass-details h2 {
+        font-family: gotham medium;
+        font-size: 1.3rem;
+        margin-left: 9rem;
+    }
+
+    .invoice .main-body .pass-details .text-name {
+        position: relative;
+    }
+
+    .invoice .main-body .pass-details .text-name .right {
+        width: 50%;
+        position: absolute;
+        top: 0;
+        left: 80%;
+    }
+
+    .invoice .main-body .pass-details .text .text-nic h3 {
+        margin-bottom: 2.3rem;
+    }
+
+    .invoice .main-body .body-payment .row {
+        display: block;
+    }
+
+    .invoice .main-body .body-payment .row .other {
+        margin-top: 2rem;
+        margin-left: -2rem;
+    }
+
+    .invoice .body {
+        background-color: transparent;
+    }
+
+    .invoice .main-body {
+        background-color: transparent;
+        max-width: 100%;
+        border-radius: 2rem;
+    }
+
+}
+
+@media screen and (max-width: 770px){
+    .invoice .main-body .pass-details h2 {
+        font-family: gotham medium;
+        font-size: 1.3rem;
+        margin-left: 7rem;
+    }
+}
+
+
+@media screen and (max-width: 734px) {
+    .invoice .main-body .body-payment .row .other {
+        margin-top: 2rem;
+        margin-left: 1rem;
+    }
+}
+
+@media screen and (max-width: 670px){
+    .invoice .main-body .pass-details h2 {
+        font-family: gotham medium;
+        font-size: 1.3rem;
+        margin-left: 5.3rem;
+    }
+}
+
+
+@media screen and (max-width: 630px){
+    .invoice .main-body .pass-details h2 {
+        font-family: gotham medium;
+        font-size: 1.3rem;
+        margin-left: 4.6rem;
+    }
+}
+
+
+@media screen and (max-width: 600px){
+    .invoice .main-body .pass-details h2 {
+        font-family: gotham medium;
+        font-size: 1.3rem;
+        margin-left: 4rem;
+    }
+}
+
+
+@media screen and (max-width: 556px){
+    .invoice .main-body .pass-details h2 {
+        font-family: gotham medium;
+        font-size: 1.3rem;
+        margin-left: 3.5rem;
+    }
+}
+
+@media screen and (max-width: 545px) {
+    .invoice .body {
+        max-width: 100%;
+    }
+
+    .invoice .main-body .pass-details h2 {
+        font-family: gotham medium;
+        font-size: 1.3rem;
+        margin-left: 4.5rem;
+    }
+}
+
+
+@media screen and (max-width: 495px) {
+
+    .invoice .main-body .pass-details h2 {
+        font-family: gotham medium;
+        font-size: 1.3rem;
+        margin-left: 3.5rem;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .invoice .main-body .head .second .plus h3 {
+        font-size: 1rem;
+        color: #000;
+    }
+
+    .invoice .main-body .head .second .plus p {
+        font-size: .8rem;
+        color: #f15a29;
+        line-height: .1;
+    }
+
+    .invoice .main-body .head .second .terminal .place h2 {
+        font-size: 1rem;
+        font-weight: bolder;
+        color: #000;
+    }
+
+    .invoice .main-body .head .second .terminal .seat p {
+        font-size: .8rem;
+    }
+
+    .invoice .main-body .head .second .terminal .time .time-p {
+        font-size: 1rem;
+        color: #000;
+    }
+
+    .invoice .main-body .head .second .terminal .time p {
+        font-size: .9rem;
+        color: #000;
+        margin-bottom: 0;
+    }
+
+    .invoice .main-body .pass-details h2 {
+        font-size: 1rem;
+        margin-left: 3rem;
+    }
+
+    .invoice .main-body .pass-details div h3 {
+        font-size: .9rem;
+    }
+
+    .invoice .main-body .pass-details div p {
+        font-size: .7rem;
+    }
+
+    .invoice .main-body .pass-details div h3 {
+        font-size: .9rem;
+    }
+
+    .invoice .main-body .foot h1 {
+        font-size: 1.5rem;
+    }
+
+    .invoice .foot .paid {
+        font-size: 1.5rem;
+    }
+
+    .invoice .download h1 {
+        font-family: bahn;
+        font-size: 1rem;
+        color: #a2a2a2;
+    }
+}
+
+
+
+@media screen and (max-width: 400px) {
+    
+
+    .invoice .body {
+        max-width: 100%;
+        background-color: transparent;
+        margin: 1rem;
+        padding: 0;
+        border-radius: 2rem;
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 332px) {
+    .invoice .main-body .head .second .terminal .place h2 {
+        font-size: .8rem;
+        font-weight: bolder;
+        color: #000;
+    }
+
+    .invoice .main-body .head .second .plus h3 {
+        font-size: .8rem;
+        color: #000;
+    }
+
+    .invoice .main-body .head .second .terminal .time .time-p {
+        font-size: .8rem;
+        color: #000;
+    }
+
+    .invoice .main-body .pass-details .text-name2 div {
+        margin: 1rem 0;
+        margin-bottom: 2.4rem;
+    }
+
+    .invoice .main-body .body-payment {
+        width: 85%;
+        margin: 1.5rem 0;
+        padding-left: 1rem;
+        padding-top: 44rem;
+    }
+} 
+
+
+

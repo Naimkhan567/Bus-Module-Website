@@ -1,0 +1,300 @@
+.section {
+    margin: 20px 0;
+}
+
+.section .body {
+    margin: 0;
+}
+
+.section .body .head-text {
+    display: flex;
+    position: relative;
+}
+
+.section .body .head h2 {
+    font-family: gilroy bold;
+    font-size: 1.8rem;
+    font-weight: bolder;
+    color: #000;
+    position: absolute;
+    left: 36%;
+}
+
+.section .body .head h1 {
+    font-family: gilroy bold;
+    font-size: 2rem;
+    font-weight: bolder;
+    color: #b8b8b8;
+    margin-left: 5rem;
+}
+
+.section .body .head .bar {
+    width: 95%;
+    margin: 0 auto;
+    height: 1px;
+    background-color: #868686;
+}
+
+.section .body .left .summary {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section .body .left .summary p{
+    font-family: 'Circular Std Book', sans-serif;
+    font-size: 1rem;
+    color: #000;
+}
+
+.section .body .left .seat .number span {
+    padding: .1rem;
+    background-color: #08fb14;
+    color: #FFFFFF;
+}
+
+.section .body .left .span span {
+    padding: 0 .5rem;
+}
+
+.section .body .payment-body .choose {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #b8b8b8;
+    padding: 1rem;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.section .body .payment-body .choose:last-child {
+    border: none;
+}
+
+.section .body .payment-body .choose p {
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+.section .body .payment-body {
+    box-shadow: 0px 0px 5px #FBC108;
+    margin: 0 1.5rem;
+    margin-top: 1rem;
+    border-radius: 1rem;
+}
+
+.section .body .right {
+    margin: 0 auto;
+}
+
+.section .body .right h3 {
+    font-family: 'Circular Std Book', sans-serif;
+    font-size: 1.5rem;
+    color: #3f3f3f;
+}
+
+.section .body .right h5 {
+    font-family: 'Circular Std Book', sans-serif;
+    font-size: 1rem;
+    color: #838383;
+}
+
+.section .body .right p {
+    font-family: 'Circular Std Book', sans-serif;
+    font-size: 1rem;
+    color: #838383;
+}
+
+.section .body .right .bar {
+    width: 70%;
+    height: 1px;
+    background-color: #b8b8b8;
+}
+
+.section .body .right div {
+    margin: 20px 35px;
+}
+
+.section .body .details {
+    margin-top: 2rem;
+}
+
+.section .body .details h3 {
+    font-family: gilroy bold;
+    font-size: 1.7rem;
+    font-weight: bolder;
+    color: #FBC108;
+}
+
+.section .body .details h1 {
+    font-family: 'Circular Std Book', sans-serif;
+    font-size: 2rem;
+    color: #000;
+}
+
+.section .foot {
+    text-align: center;
+    width: 100%;
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.section .foot-btn {
+
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+
+}
+
+.section .foot a {
+    position: absolute;
+    top: 42rem;
+    left: 47%;
+    transform: translate(-50%, -50%);
+    display: block;
+    text-decoration: none;
+    font-family: 'Circular Std Book', sans-serif;
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    background-color: #FBC108;
+    width: 40%;
+    margin: 0 auto;
+    padding: 15px 20px;
+    border-radius: 15px;
+    z-index: 111;
+    height: 5rem;
+}
+
+
+@media screen and (max-width: 1165px){
+    .section .body .main-row {
+        display: block !important;
+    }
+
+    .section .body .main-row .left-8 {
+        width: 100%;
+    }
+
+    .section .body .main-row .right {
+        width: 100%;
+        text-align: right;
+    }
+    .section .body .right .bar {
+        width: 60%;
+        height: 1px;
+        margin-left: auto;
+    }
+
+    .section .foot a {
+        position: absolute;
+        top: 60rem;
+        left: 70%;
+        width: 40%;
+    }
+
+    .section .body .head h2 {
+        position: absolute;
+        left: 55%;
+    }
+}
+
+@media screen and (max-width: 851px) {
+    .section .body .head h2 {
+        position: absolute;
+        left: 55%;
+        font-size: 1.5rem;
+    }
+}
+
+
+
+@media screen and (max-width: 767px) {
+    .section .body .main-row .left-8 .row{
+        flex-direction: column;
+    }
+
+    .section .body .main-row .left-8 .row .left {
+        order: 2;
+        margin-top: 3rem;
+    }
+
+    .section .body .main-row .left-8 .row .payment {
+        order: 1;
+        margin-top: 5rem;
+    }
+
+    .section .foot {
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+    }
+
+
+    .section .foot a {
+        position: fixed;
+        top: 97%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+    }
+
+
+    .section .body .details {
+        background-color: #FFFFFF;
+        position: fixed;
+        bottom: 4rem;
+        width: 100%;
+        text-align: center;
+        left: 0;
+    }
+
+    .section .body .main-row .right {
+        width: 100%;
+        text-align: right;
+        margin-bottom: 7rem;
+    }
+
+    .section .body .details h3 {
+        font-size: 1.2rem;
+    }
+    
+    .section .body .details h1 {
+        font-size: 1.5rem;
+        color: #000;
+    }
+
+    .section {
+        position: relative;
+    }
+
+    .section .body .head h2 {
+        position: absolute;
+        top: 6rem;
+        left: 30%;
+        font-size: 1.5rem;
+        z-index: 111;
+    }
+}
+
+@media screen and (max-width: 379px) {
+    .section .body .head h1 {
+        font-size: 1.6rem;
+    }
+    
+} 
+
+@media screen and (max-width: 530px) {
+    .section .body .head h2 {
+        position: absolute;
+        top: 6rem;
+        left: 30%;
+        font-size: 1rem;
+        z-index: 111;
+    }
+    .section .body{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+}

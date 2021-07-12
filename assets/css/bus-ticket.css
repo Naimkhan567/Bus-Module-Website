@@ -1,0 +1,1066 @@
+
+@font-face {
+    font-family: neo;
+    src: url(../font/Changeling\ Neo\ Bold.otf);
+}
+
+
+
+
+
+
+
+
+
+.body {
+    width: 100%;
+    height: 100%;
+    background-color: #FFFFFF;
+    padding: 0 2rem;
+    padding-top: 2rem;
+}
+
+.body .main-row {
+    display: flex;
+}
+
+.body .main-left {
+    width: 24%;
+    margin: 0 auto;
+}
+
+.body .main-left .filter {
+    width: 100%;
+    box-shadow: 2px 2px 10px 2px #b8b8b8;
+    border-radius: 30px;
+    padding: 1.5rem 2rem;
+}
+
+
+.body .body-head {
+    text-align: center;
+}
+
+
+
+.body .body-head h1 {
+    font-family: gilroy bold;
+    font-size: 30px;
+    font-weight: bolder;
+    color: #b8b8b8;
+}
+
+.body .body-head p {
+    font-size: 18px;
+    font-family: 'Circular Std Book', sans-serif;
+    color: #868686;
+}
+
+.body .filter h2 {
+    font-family: gilroy bold;
+    font-size: 25px;
+    font-weight: bolder;
+    color: #3f3f3f;
+    padding-top: 2rem;
+    padding-bottom: 40px;
+}
+
+.body .filter .time h3 {
+    font-size: 15px;
+    font-family: 'Circular Std Book', sans-serif;
+    color: #0d2bde;
+
+}
+
+.body .filter .time .time-head svg {
+    display: block;
+    margin-top: .3rem;
+}
+
+#time-range p {
+    font-size: 15px;
+    font-family: 'Circular Std Book', sans-serif;
+    color: #707070;
+}
+
+#time-range .ui-slider-horizontal {
+    height: 3px;
+    background-color: #ffffff;
+    border: 1px solid #BABABA;
+    clear: both;
+    margin: 8px 0;
+    margin-left: 10px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    border-radius: 6px;
+}
+
+#time-range .ui-slider {
+    position: relative;
+    text-align: left;
+}
+
+#time-range .ui-slider-horizontal .ui-slider-range {
+    top: -1px;
+    height: 100%;
+}
+
+#time-range .ui-slider .ui-slider-range {
+    position: absolute;
+    z-index: 1;
+    height: 3px;
+    font-size: .7em;
+    display: block;
+    border: none;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -khtml-border-radius: 6px;
+    border-radius: 6px;
+    background-color: #FFFFFF;
+
+}
+
+#time-range .ui-slider .ui-slider-handle {
+    border-radius: 50%;
+    background: #FFFFFF;
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    z-index: 2;
+    cursor: default;
+    border: none;
+    cursor: pointer;
+    border: 1px solid #707070;
+}
+
+#time-range .ui-slider .ui-slider-handle:focus {
+    border-radius: 50% !important;
+    border: 1px solid #707070;
+}
+
+#time-range .ui-slider .ui-slider-handle:after {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    top: 50%;
+    margin-top: -10px;
+    left: 50%;
+}
+
+#time-range .ui-slider-horizontal .ui-slider-handle {
+    top: -.5em;
+    margin-left: -.6em;
+}
+
+#time-range .ui-slider a:focus {
+    outline: none !important;
+    border: none !important;
+}
+
+
+#time-range .sliders_step1 {
+    width: 100%;
+}
+
+#time-range {
+    width: 100%;
+}
+
+
+
+.body .price {
+    margin: 3rem 0;
+}
+
+.body .price h3 {
+    font-size: 15px;
+    font-family: 'Circular Std Book', sans-serif;
+    color: #0d2bde;
+}
+
+
+
+.range-slider {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    height: 4em;
+}
+
+.range-slider input[type="range"] {
+    position: absolute;
+    left: 0;
+    bottom: 18px;
+    height: 3px;
+    width: 100%;
+}
+
+input[type="number"] {
+    border: none;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    width: 100%;
+}
+
+input[type="range"]:focus {
+    outline: none;
+}
+
+input[type="range"]:focus::-webkit-slider-runnable-track {
+    background: #0d2bde;
+}
+
+input[type="range"]:focus::-ms-fill-lower {
+    background: #0d2bde;
+}
+
+input[type="range"]:focus::-ms-fill-upper {
+    background: #0d2bde;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 3px;
+    cursor: pointer;
+    background: #0d2bde;
+    border-radius: 1px;
+    box-shadow: none;
+    border: 0;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    z-index: 2;
+    position: relative;
+    box-shadow: 0px 0px 0px #000;
+    border: 1px solid #707070;
+    height: 18px;
+    width: 18px;
+    border-radius: 25px;
+    background: #FFFFFF;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -7px;
+
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+    background-color: #0d2bde;
+}
+
+input[type="range"]::-moz-range-track {
+    width: 100%;
+    height: 3px;
+    cursor: pointer;
+    background: #2497e3;
+    border-radius: 1px;
+    box-shadow: none;
+    border: 0;
+}
+
+input[type="range"]::-moz-range-thumb {
+    z-index: 2;
+    position: relative;
+    box-shadow: 0px 0px 0px #000;
+    border: 1px solid #2497e3;
+    height: 18px;
+    width: 18px;
+    border-radius: 25px;
+    background: #a1d0ff;
+    cursor: pointer;
+}
+
+input[type="range"]::-ms-track {
+    width: 100%;
+    height: 3px;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+}
+
+input[type="range"]::-ms-fill-lower,
+input[type="range"]::-ms-fill-upper {
+    background: #2497e3;
+    border-radius: 1px;
+    box-shadow: none;
+    border: 0;
+}
+
+input[type="range"]::-ms-thumb {
+    z-index: 2;
+    position: relative;
+    box-shadow: 0px 0px 0px #000;
+    border: 1px solid #2497e3;
+    height: 18px;
+    width: 18px;
+    border-radius: 25px;
+    background: #a1d0ff;
+    cursor: pointer;
+}
+
+.range-slider {
+    position: relative;
+}
+
+.range-slider span {
+
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    scroll-behavior: unset;
+}
+
+.range-slider span input {
+    font-size: 13px;
+    font-family: 'Circular Std Book', sans-serif;
+    color: #868686;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+    border: transparent;
+}
+
+.form-control:focus {
+    border-color: inherit;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+input:focus,
+input:active {
+    border-color: transparent !important;
+    -webkit-box-shadow: none;
+    box-shadow: none !important;
+}
+
+
+
+
+
+.body .type h3 {
+    font-size: 15px;
+    font-family: 'Circular Std Book', sans-serif;
+    color: #0d2bde;
+    padding-bottom: 15px;
+}
+
+.body .type .form-check-label {
+    font-size: 13px;
+    font-family: 'Circular Std Book', sans-serif;
+    color: #525861;
+}
+
+.body .main-middle {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.body .main-middle .btn-modal1 {
+    display: block;
+    width: 100%;
+}
+
+.btn:focus {
+    outline: none !important;
+    box-shadow: none;
+}
+
+
+
+.body .main-middle .bus-ticket {
+    box-shadow: 2px 2px 5px 2px #b8b8b8;
+    padding: 0 2rem;
+    border-radius: 1rem;
+    margin: 1rem;
+}
+
+.body .main-middle .logo {
+    text-align: left;
+    padding-top: .2rem;
+}
+
+.body .main-middle .ticket-2 .logo {
+    text-align: left;
+    padding-top: 1rem;
+}
+
+.body .main-middle .logo svg {
+    text-align: left;
+}
+
+.body .main-middle .left {
+    padding-top: 30px;
+}
+
+
+.body .main-middle .bus-ticket .ticket-body .left-part {
+    width: 57%;
+}
+
+.body .main-middle .bus-ticket .ticket-body .right-part {
+    width: 43%;
+    position: relative;
+}
+
+.body .main-middle .bus-ticket .ticket-body .right-part .right-part-in {
+    position: absolute;
+    right: 0;
+}
+
+.body .main-middle .left-part h2,
+.body .main-middle .right-part h2 {
+    font-family: gilroy bold;
+    font-size: 45px;
+    font-weight: 900;
+    line-height: .3;
+    color: #2bb673;
+    padding-top: .5rem;
+}
+
+.body .main-middle .right-part-in {
+    padding-top: .5rem;
+}
+
+.body .main-middle .left h5 {
+    font-size: 18px;
+    font-family: 'Circular Std Book', sans-serif;
+    color: #2bb673;
+    padding-top: 5px;
+    text-align: left;
+}
+
+.body .main-middle .left-part p {
+    font-family: 'Circular Std Book', sans-serif;
+    font-size: 14.5px;
+    font-weight: bolder;
+    color: #fbc108;
+    padding-top: 8px;
+}
+
+.body .main-middle .middle {
+    padding-top: 20px;
+}
+
+.body .main-middle .middle h2 {
+    font-family: gilroy bold;
+    font-size: 27px;
+    font-weight: bolder;
+    color: #2bb673;
+    list-style: .3;
+}
+
+.body .main-middle .middle a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 0 5px;
+}
+
+
+
+.body .main-middle .right-part small {
+    font-size: 12.5px;
+    font-family: 'Circular Std Book', sans-serif;
+    color: #3f3f3f;
+}
+
+.body .main-middle .right-part h5 {
+    font-size: 12.5px;
+    font-family: 'Circular Std Book', sans-serif;
+    color: #FBC108;
+    margin-top: 4.6rem;
+}
+
+.body .main-middle .ticket-2 .logo {
+    padding-bottom: 15px;
+}
+
+.body .main-middle .ticket-2 .left p {
+    font-family: 'Circular Std Book', sans-serif;
+    font-size: 14.5px;
+    font-weight: bolder;
+    color: #fbc108;
+    padding-top: 20px;
+}
+
+.body .main-middle .ticket-body .middle .icon {
+    padding-top: .3rem;
+}
+
+.body .main-middle .ticket-2 .middle h5 {
+    font-size: 18px;
+    font-family: 'Circular Std Book', sans-serif;
+    color: #2bb673;
+    padding-bottom: 25px;
+    line-height: .2;
+}
+
+.body .main-middle .ticket-2 .right h2 {
+    padding-bottom: 50px;
+}
+
+
+.body .main-right {
+    width: 20%;
+    margin: 0 auto;
+    border-left: 1px solid #b8b8b8;
+}
+
+.body .main-right .colum {
+    padding-bottom: 6rem;
+    display: flex;
+}
+
+.body .main-right .colum .text {
+    padding-left: .6rem;
+}
+
+.body .main-right .colum h5 {
+    font-family: gilroy bold;
+    font-size: 1rem;
+    font-weight: bolder;
+    color: #b8b8b8;
+}
+
+.body .main-right .colum p {
+    font-family: gilroy bold;
+    font-size: .7rem;
+    font-weight: bolder;
+    color: #b8b8b8;
+}
+
+.body .main-right .last {
+    padding-left: 2rem;
+}
+
+@media screen and (max-width: 1266px) {
+    .body .main-middle .bus-ticket .ticket-body .left-part {
+        width: 60%;
+    }
+
+    .body .main-middle .bus-ticket .ticket-body .right-part {
+        width: 40%;
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .body .main-middle .bus-ticket .ticket-body .left-part {
+        width: 65%;
+    }
+
+    .body .main-middle .bus-ticket .ticket-body .right-part {
+        width: 35%;
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 1028px) {
+    .body {
+        width: 100%;
+        height: 100%;
+        background-color: #FFFFFF;
+        padding: 0 1rem;
+        padding-top: 2rem;
+    }
+}
+
+@media screen and (max-width: 978px) {
+
+    .body .main-right .colum {
+        padding-bottom: 2rem !important;
+        display: block;
+    }
+
+    .body .main-right .colum .text {
+        padding-top: .8rem;
+    }
+
+    .body .main-right .last {
+        padding-left: 0rem;
+    }
+
+    .body .main-right .last svg {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .body .main-row {
+        flex-direction: column;
+    }
+
+    .body .main-middle {
+        width: 100%;
+        margin: 0 auto;
+        order: 1;
+    }
+
+    .body .main-left {
+        width: 100%;
+        margin: 0 auto;
+        order: 2;
+    }
+
+    .body .main-right {
+        width: 100%;
+        margin: 0 auto;
+        border: none;
+        margin-top: 5rem;
+        order: 3;
+    }
+
+    .body .main-middle .btn-modal1 {
+        padding: 0;
+    }
+
+    .body .main-middle .btn-modal1 .bus-ticket {
+        margin: 0;
+        margin-bottom: 2rem;
+    }
+
+    .body .main-middle .bus-ticket .ticket-body .left-part {
+        width: 60%;
+    }
+
+    .body .main-middle .bus-ticket .ticket-body .right-part {
+        width: 40%;
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .body .main-middle .bus-ticket .ticket-body .left-part {
+        width: 63%;
+    }
+
+    .body .main-middle .bus-ticket .ticket-body .right-part {
+        width: 37%;
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 505px) {
+    .body .main-middle .bus-ticket .ticket-body .left-part {
+        width: 65%;
+    }
+
+    .body .main-middle .bus-ticket .ticket-body .right-part {
+        width: 35%;
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 484px) {
+    .body .main-middle .ticket-body .middle {
+        display: block !important;
+        text-align: left;
+        margin-bottom: 1rem;
+        margin-top: 3rem;
+    }
+
+    .body .main-middle .ticket-body .middle p {
+        margin-bottom: 0;
+    }
+
+    .body .main-middle .bus-ticket .ticket-body .left-part {
+        width: 100%;
+    }
+
+    .body .main-middle .right-part-in {
+        position: absolute;
+        top: 2.5rem;
+    }
+
+    .body .main-middle .right-part h5 {
+        margin-top: 1rem;
+    }
+
+    .body .main-middle .right-part h2 {
+        color: #000;
+        font-size: 1rem;
+        line-height: 1;
+    }
+
+    .body .main-middle .bus-ticket {
+        position: relative;
+    }
+
+    .body .main-middle .left-part .left {
+        position: absolute;
+        right: 0;
+        top: 3.5rem;
+        padding: 0 1rem;
+    }
+
+}
+
+@media screen and (max-width: 360px) {
+    .body .main-middle .right-part h5 {
+        margin-top: .5rem;
+    }
+
+}
+
+@media screen and (max-width: 330px) {
+    .body .main-middle .left-part h2, .body .main-middle .right-part h2 {
+        font-family: gilroy bold;
+        font-size: 23px;
+        font-weight: bolder;
+        line-height: 1;
+        color: #2bb673;
+        padding-top: .5rem;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*modal*/
+
+
+
+.modal-dialog {
+    max-height: 40rem !important;
+}
+
+.modal .modal-content {
+    padding-left: 7rem;
+    padding-bottom: 3rem;
+}
+
+.modal .modal-content .colum {
+    margin: 0 2rem;
+}
+
+.modal .modal-content .modal-header {
+    display: block;
+    text-align: center;
+    border: none !important;
+}
+
+.modal .modal-content .modal-header h3 {
+    font-family: neo;
+    font-size: 20px;
+    font-weight: bolder;
+    color: #0d2bde;
+}
+
+.modal .modal-content .modal-header h5 {
+    font-family: 'Circular Std Book', sans-serif !important;
+    font-size: 10px;
+    font-weight: 300;
+    color: #3f3f3f;
+    padding-bottom: 15px;
+}
+
+.modal .modal-content .bar {
+    width: 180px;
+    height: 1px;
+    background-color: #868686;
+    margin: 0 auto;
+}
+
+.modal .modal-content .modal-body {
+    padding-top: 25px;
+}
+
+
+.modal .modal-content .modal-body .text {
+    font-family: gilroy;
+    font-size: 13px;
+    font-weight: bolder;
+    color: #FBC108;
+}
+
+.modal .modal-body .colum .left button,
+.modal .modal-body .colum .right button {
+    border: 1px solid #525861;
+    width: 2.3rem;
+    height: 2rem;
+    background-color: #FFFFFF;
+    text-align: center;
+}
+
+.modal .modal-content .main-body .seats {
+    box-shadow: 2px 2px 5px 2px #b8b8b8;
+    height: 90%;
+    padding: .6rem;
+    border-radius: .6rem;
+}
+
+
+.modal .modal-body .colum .left .top {
+    margin-top: rem;
+    
+}
+
+.modal .modal-body .colum .left .top button {
+    width: 2.3rem;
+    height: 2rem;
+    display: block;
+    margin: .5rem 0;
+    border-radius: .3rem;
+}
+
+.modal .modal-body .colum .left .bottom button {
+    width: 2.3rem;
+    height: 2rem;
+    margin: .3rem 0;
+    margin-right: .6rem;
+    border-radius: .3rem;
+}
+
+.modal .modal-body .colum .right button {
+    width: 2.3rem;
+    height: 2rem;
+    margin: .3rem;
+    border-radius: .3rem;
+}
+
+.modal .modal-body .colum .right .single button {
+    width: 2.3rem;
+    height: 2rem;
+    margin: .3rem .3rem
+}
+
+.modal .modal-body .colum .hold {
+    background-color: #ff3030 !important;
+    color: #FFFFFF;
+}
+
+.modal .modal-body .colum .booked {
+    background-color: #1bbc20 !important;
+    color: #FFFFFF;
+}
+
+
+.modal .modal-content .seats-footer {
+    padding-top: 20px;
+}
+
+.modal .modal-content .seats-footer .bar {
+    width: 150px;
+    height: 1px;
+    background-color: #b8b8b8;
+    margin: 0 auto;
+}
+
+.modal .modal-content .seats-footer .box {
+    margin: 5px;
+}
+
+.modal .modal-content .seats-footer .box span {
+    padding: 5px;
+    display: inline-block;
+    border-radius: 2px;
+}
+
+.modal .modal-content .seats-footer .available span {
+    background-color: #FFFFFF;
+    border: 1px solid #b8b8b8;
+}
+
+.modal .modal-content .seats-footer .booked span {
+    background-color: #1bbc20;
+    border: 1px solid #b8b8b8;
+}
+
+.modal .modal-content .seats-footer .hold span {
+    background-color: #ff3030;
+    border: 1px solid #b8b8b8;
+}
+
+.modal .modal-content .colum.right {
+    padding-left: 5rem;
+}
+
+.modal .modal-content .colum.right .point {
+    background-color: #FFFFFF;
+    box-shadow: 2px 2px 5px 2px #d8d8d8;
+    padding: 15px 30px;
+    border-radius: 10px;
+}
+
+.modal .modal-content .colum.right h1 {
+    font-family: gilroy bold;
+    font-size: 15px;
+    font-weight: bolder;
+    color: #d39229;
+    padding-bottom: 15px;
+}
+
+.modal .modal-content .colum.right .boarding {
+    padding-left: 20px;
+}
+
+.modal .modal-content .colum.right .boarding a {
+    display: block;
+    font-family: 'Circular Std Book', sans-serif !important;
+    font-size: 13px;
+    font-weight: 700;
+    color: #383c42;
+    padding: 10px 0px;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    width: 10rem;
+}
+
+.modal .modal-content .colum.right .boarding a.active {
+    background-color: #FBC108;
+    font-weight: 900;
+}
+
+.modal .modal-content .colum.right .details {
+    margin-top: 1.5rem;
+    padding: 1.5rem 3rem;
+    padding-right: 15rem;
+    background-color: #FFFFFF;
+    box-shadow: 2px 2px 5px 2px #d8d8d8;
+    border-radius: .7rem;
+
+}
+
+.modal .modal-content .colum.right .details h1 {
+    font-family: gilroy bold;
+    font-size: 15px;
+    font-weight: bolder;
+    color: #d39229;
+    padding-bottom: 15px;
+}
+
+.modal .modal-content .colum.right .details p {
+    display: block;
+    font-family: 'Circular Std Book', sans-serif !important;
+    font-size: 11px;
+    color: #383c42;
+}
+
+
+.modal .modal-content .colum.right .details p span {
+    font-weight: 900;
+}
+
+
+.modal .modal-content .colum.right .continue {
+    text-align: center;
+    width: 150px;
+    margin-left: auto ;
+    margin-top: 20px;
+}
+
+.modal .modal-content .colum.right .continue a {
+    display: block;
+    text-decoration: none;
+    display: block;
+    font-family: 'Circular Std Book', sans-serif !important;
+    font-size: 13px;
+    color: #383c42;
+    font-weight: 400;
+    background-color: #FBC108;
+    box-shadow: 2px 2px 5px 3px #d8d8d8;
+    padding: 12px 0;
+    border-radius: 10px;
+}
+
+.modal .modal-content .colum.right .continue a span {
+    padding-left: 20px;
+}
+
+
+
+@media screen and (max-width: 1200px){
+    .modal .modal-content {
+        padding: 0 1rem;
+        padding-bottom: 3rem;
+    }
+
+    .modal .modal-content .colum {
+        margin: 0 1rem;
+    }
+
+    .modal .modal-body .colum.right {
+        padding-left: 2rem;
+    }
+    
+}
+
+@media screen and (max-width: 995px) {
+    .modal .modal-content .colum {
+        margin: 0 1rem;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .modal .modal-body .main-body {
+        display: block !important;
+    }
+
+    .modal .modal-body .main-body .seats {
+        background-color: #FFFFFF;
+        margin-bottom: 2rem;
+    }
+
+    .modal .modal-content {
+        background-color: transparent;
+    }
+
+    .modal .modal-body .main-body .right {
+        padding-left: 0;
+    }
+
+    .modal .modal-body .main-body .right .details {
+        background-color: transparent;
+        box-shadow: none;
+        padding: 0;
+        padding-left: 2rem;
+    }
+
+    .modal .modal-body .main-body .right .details p {
+        color: #FFFFFF;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 403px) {
+    .modal {
+        padding: 0;
+    }
+
+    .modal .modal-body .main-body .seats .right {
+        margin-left: 1rem;
+    }
+}
+
+@media screen and (max-width: 368px) {
+    .modal .modal-content {
+        padding: 0;
+        padding-bottom: 3rem;
+    }
+}

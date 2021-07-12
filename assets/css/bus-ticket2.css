@@ -1,0 +1,207 @@
+
+.main-body {
+    margin-top: 3rem;
+}
+
+.main-body .title {
+    font-family: gilroy bold;
+    font-size: 2.3rem;
+    font-weight: bolder;
+    color: #000000;
+    padding-bottom: 1.5rem;
+    padding-left: 4rem;
+}
+
+.main-body .bar {
+    width: 95%;
+    height: 1px;
+    margin: 0 auto;
+    background-color: #000000;
+}
+
+.main-body .ticket-booking {
+    width: 95%;
+    margin: 2.5rem auto;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px 2px #b8b8b8;
+}
+
+.main-body .ticket-booking .head {
+    background-color: #fbc108;
+    padding: 1rem 1.5rem;
+    border-radius: 15px 15px 0 0;
+}
+
+.main-body .ticket-booking .head h3 {
+    font-family: 'Circular Std Book', sans-serif;
+    font-size: 1.3rem;
+    color: #FFFFFF;
+}
+
+.main-body .ticket-booking .head p {
+    font-family: 'Circular Std Book', sans-serif;
+    font-size: .9rem;
+    color: #FFFFFF;
+    padding-top: 5px;
+}
+
+.main-body .ticket-booking .body {
+    width: 93%;
+
+}
+
+.main-body .ticket-booking .body h3 {
+    font-family: 'Circular Std Book', sans-serif;
+    font-size: 1.5rem;
+    color: #000000;
+}
+
+.main-body .ticket-booking .body p {
+    font-family: 'Circular Std Book', sans-serif;
+    font-size: 1rem;
+    color: #000000;
+}
+
+.main-body .ticket-booking .foot p {
+    font-family: 'Circular Std Book', sans-serif;
+    font-size: 1.4rem;
+    color: #000000;
+    padding-left: 1.7rem;
+}
+
+.main-body .ticket-booking .foot p span {
+    display: inline-block;
+    padding: .5rem;
+    line-height: .3;
+    background-color: #1bbc20;
+}
+
+
+.main-body .pass-details {
+    width: 95%;
+    margin: 2.5rem auto;
+    padding: 1rem 1rem;
+    padding-bottom: 2rem;
+    border-radius: 1.5rem;
+}
+
+.main-body .pass-details h1 {
+    font-family: gilroy bold;
+    font-size: 2.3rem;
+    font-weight: bolder;
+    color: #000000;
+    padding: 15px 0;
+}
+
+.main-body .pass-details .form-control {
+    box-shadow: 2px 2px 5px 2px #e7e3e3;
+}
+
+.main-body .pass-details .group {
+    margin-left: .5rem;
+    border: 1px solid #FBC108;
+    border-radius: 10px;
+    outline: transparent;
+}
+
+.main-body .pass-details .group label {
+    cursor: pointer;
+    margin: 2px 0;
+    padding: 5px 20px;
+    color: #FBC108;
+}
+
+.main-body .pass-details .group label.active {
+    background-color: #FBC108;
+    border-radius: 15px;
+    color: #FFFFFF;
+}
+
+.main-body .pass-details .group .btn:focus {
+    outline: 0px !important;
+    box-shadow: none !important;
+}
+
+
+
+.main-body .contact-detail {
+    width: 95%;
+    margin: 2.5rem auto;
+    padding-left: 15px;
+}
+
+.main-body .contact-detail h1 {
+    font-family: gilroy bold;
+    font-size: 2.3rem;
+    font-weight: bolder;
+    color: #000000;
+    padding: 15px 0;
+}
+
+.main-body .contact-detail input {
+    box-shadow: 2px 2px 5px 2px #e7e3e3;
+    border: 1px solid #e7e3e3;
+}
+
+
+.main-body .right .fare-details {
+    box-shadow: 2px 2px 5px 2px #d8d8d8;
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 2.5rem;
+    padding: 20px 15px;
+    border-radius: 15px;
+}
+
+.main-body .right .fare-details .head h2 {
+    font-family: gilroy bold;
+    font-size: 2rem;
+    font-weight: bolder;
+    color: #FBC108;
+    padding-left: 1.7rem;
+}
+
+.main-body .right .fare-details .head .bar {
+    width: 100%;
+}
+
+.main-body .right .fare-details .body {
+    width: 90%;
+}
+
+.main-body .right .fare-details .body h3 {
+    font-family: 'Circular Std Book', sans-serif;
+    font-size: 1.5rem;
+    color: #000000;
+}
+
+.main-body .right .fare-details .body h3 span {
+    font-size: 1.9rem;
+}
+
+.main-body .right .fare-details .body h1 {
+    font-family: 'Circular Std Book', sans-serif;
+    font-size: 1.9rem;
+    color: #000000;
+}
+
+.main-body .right .fare-details .foot {
+    text-align: center;
+}
+
+.main-body .right .fare-details .foot .bar {
+    width: 100%;
+    height: 1.5px;
+}
+
+.main-body .right .fare-details .foot a {
+    display: block;
+    background-color: #FBC108;
+    text-decoration: none;
+    margin-top: 30px;
+    padding: 15px 20px;
+    border-radius: 10px;
+    font-family: 'Circular Std Book', sans-serif;
+    font-size: 1.5rem;
+    color: #FFFFFF;
+}
